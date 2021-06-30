@@ -1,0 +1,104 @@
+body {
+  background-color: E5E5E5;
+  color: 22322F;
+  font-family: 'Roboto';
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: whitesmoke;
+  background: #22322F;
+}
+
+::selection {
+  color: white;
+  background: #22322F;
+}
+
+/* all content */
+.section {
+  width: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/* navbar */
+.topnav{
+  margin-top: 2rem;
+}
+
+.logo{
+  margin-left: 2rem;
+}
+
+.topnav-right {
+  float: right;
+  margin-right: 2rem;
+}
+
+.topnav-right a{
+  margin-left: 2rem;
+  color: #303031;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.topnav-right a:hover{
+  color: #71A89E;
+}
+
+.topnav-right a.sign-in{
+  color: #71A89E;
+}
+
+.topnav-right a.sign-in:hover{
+  color: #22322F;
+}
+
+/* containt text */
+.container h1{
+ color: #22322F;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.button{
+  background: #71A89E;
+  color: whitesmoke;
+  padding: 15px 32px;
+  border-radius: 8px;
+  border: 2px solid #000000;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.button:hover {
+  background: rgb(37, 54, 51);
+  color:  whitesmoke;
+  font-weight: bold;
+}
+
+/* containt image*/
+.image-container {
+  padding: 0.8rem;
+}
+
+.image-container img {
+  border-radius: 100%;
+  width: 100%;
+  object-fit: fit;
+}
+
+@media only screen and (max-width: 768px) {
+  .image-container {
+    padding: 3rem;
+  }
+  .button{
+    scale: 0.5;
+  }
+
+  .section .content-text{
+    top:400px;
+  }
+
+  .section .content-img{
+    top:0px;
+  }
+}
