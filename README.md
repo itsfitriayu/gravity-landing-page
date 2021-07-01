@@ -1,4 +1,4 @@
-# Traditional Game
+# Gravity Landing Page
 Figma to HTML and CSS
 
 ## Credit
