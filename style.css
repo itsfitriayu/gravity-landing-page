@@ -85,20 +85,3 @@ body {
   width: 100%;
   object-fit: fit;
 }
-
-@media only screen and (max-width: 768px) {
-  .image-container {
-    padding: 3rem;
-  }
-  .button{
-    scale: 0.5;
-  }
-
-  .section .content-text{
-    top:400px;
-  }
-
-  .section .content-img{
-    top:0px;
-  }
-}

@@ -12,6 +12,7 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
   <link href="style.css" rel="stylesheet" type="text/css">
+  <link href="responsive.css" rel="stylesheet" type="text/css">
 
   <title>Gravity Landing Page</title>
   <link rel="icon" href="data/only-man.svg">
@@ -21,9 +22,9 @@
 <body>
   <div class="section">
     
-    <div class="topnav" data-aos="fade-down" data-aos-duration="600" id="myTopnav">
+    <div class="topnav" data-aos="fade-down" data-aos-duration="600" >
       <a href="#"><img src="data/Logo.png" alt="Man Illustration" class="logo"></a>
-      <div class="topnav-right">
+      <div class="topnav-right" id="myTopnav">
         <a href="#">Feature</a>
         <a href="#">Pricing</a>
         <a href="#">Why Gravity</a>
@@ -66,6 +67,16 @@
   <script>
     AOS.init()
   </script>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav-right") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav-right";
+      }
+    }
+    </script>
 </body>
 
 </html>
